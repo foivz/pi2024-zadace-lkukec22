@@ -37,7 +37,7 @@ posljednja stanica na kojoj je autobus bio.
 Na sastancima često raspravljamo o linijama i voznom redu, pa bismo htjeli mogućnost
 strukturiranog ispisa (na papir) informacija o voznom parku, stanicama, linijama, voznom redu i
 sl.
-Slika 1 Primjer voznog reda jedne od gradskih linija
+
 Od naših putnika često dobivamo povratne informacije, kritike i prijedloge za poboljšanje usluge.
 Jedna od stvari na koju se putnici najčešće žale je da na autobusnim stanicama ne vide jasno
 autobusne linije i prikaz voznog reda za linije koje prolaze tom stanicom. Također, s obzirom da
