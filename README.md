@@ -10,10 +10,44 @@ Luka Kukec | lkukec22@foi.hr | 0016158557 | lkukec22
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Domena projekta je softversko rješenje za sustav upravljanja gradskim prijevozom putnika. Rješenje ima za cilj digitalizirati cjeloukupno upravljanje gradskim prijevozom.
+
+S ovime će se poboljšati efikasnost gradskog prijevoza.
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+1. Prikaz informacija o linijama i voznom redu:
+Zaposlenici trebaju imati jasan i lak pristup informacijama o linijama i voznom redu.
+
+2. Unos i ažuriranje podataka o voznom parku:
+
+Sustav će omogućiti unos i ažuriranje podataka o voznom parku (modeli, kapaciteti, tehničko stanje...).
+Mogućnost unosa i ažuriranja podataka imaju tehničko osoblje i vozači autobusa.
+
+3. Izrada izvješća o prodaji karata:
+
+Sustav će omogućiti generiranje izvješća o prodaji karata.
+
+4. Prikaz statističkih podataka o korištenju sustava:
+
+Sustav će prikazivati statističke podatke o broju putnika, broju prodanih karata, korištenju linija.
+
+5. Validacija karata u autobusima:
+
+Sustav će omogućavati validaciju karata u autobusima korištenjem validatora.
+Validator će prikazati informacije o valjanosti karte i preostalom broju vožnji.
+
+6. Upravljanje profilima:
+
+Sustav će omogućiti kreiranje i upravljanje profilima za administratore i vozače autobusa.
+Profili će sadržavati osnovne kontakt informacije, uloge i dozvole u sustavu.
+
+7. Praćenje autobusa:
+
+Sustav će pratiti lokaciju autobusa u realnom vremenu koristeći GPS.
+
+8. Upravljanje rasporeda rada vozača:
+
+Sustav će omogućiti upravljanje i planiranje rasporeda rada vozača.
 
 ## Zadatak
 Korisnički zahtjevi
