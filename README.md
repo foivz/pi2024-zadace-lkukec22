@@ -10,9 +10,11 @@ Luka Kukec | lkukec22@foi.hr | 0016158557 | lkukec22
 
 
 ## Opis domene
-Domena projekta je softversko rješenje za sustav upravljanja gradskim prijevozom putnika. Rješenje ima za cilj digitalizirati cjeloukupno upravljanje gradskim prijevozom.
+Domena projekta je softversko rješenje za sustav upravljanja gradskim prijevozom putnika. Rješenje ima za cilj digitalizirati cjelokupno upravljanje gradskim prijevozom.
 
-S ovime će se poboljšati efikasnost gradskog prijevoza.
+S ovime će se poboljšati efikasnost gradskog prijevoza u smilsu upravljanja.
+Administratori će lakše moći unjeti i ažurirati podatke o voznom redu, linijama i stanicama.
+Kako bi i lakše pratili podatke sustav ima i mogućnost generiranja izvješća.
 
 ## Specifikacija projekta
 1. Prikaz informacija o linijama i voznom redu:
@@ -92,7 +94,7 @@ strane vozača, putnik sam očitava kartu na čitaču postavljenom na ulazu.
 Osim što bi gore navedene mjere ubrzale proces ukrcavanja putnika, one bi omogućavale i da
 pratimo koliko putnika se u svakom trenutku nalazi u autobusu. Jedinu zapreku koju tu vidimo je
 da na neki način treba evidentirati i da je putnik izašao iz autobusa.
-Kompletan popis naših autobusnih linija je moguće pronaći na sljedećoj poveznici.
+
 Specifikacija zahtjeva treba sadržavati minimalno:
 
 • 8 funkcionalnih zahtjeva, od toga minimalno:
