@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarazdinBus", "VarazdinBus.csproj", "{2588D616-C6AC-4E32-8CD9-F1C400EF82DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2588D616-C6AC-4E32-8CD9-F1C400EF82DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2588D616-C6AC-4E32-8CD9-F1C400EF82DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2588D616-C6AC-4E32-8CD9-F1C400EF82DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2588D616-C6AC-4E32-8CD9-F1C400EF82DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EA96D5C-DF5E-4552-86D4-F2C035F7A0E0}
+	EndGlobalSection
+EndGlobal
