@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_EditSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditSchedule.Designer.cs">
+      <DependentUpon>frm_EditSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Schedule.cs">
       <SubType>Form</SubType>
     </Compile>
