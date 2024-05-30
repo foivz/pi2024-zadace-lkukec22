@@ -35,5 +35,11 @@ public static class DB
         SqlCommand command = new SqlCommand(sqlCommand, _connection);
         return command.ExecuteNonQuery();
     }
+
+    public static SqlConnection Connection
+    {
+        get { return _connection; }
+    }
 }
+
 
