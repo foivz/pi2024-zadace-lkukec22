@@ -32,13 +32,15 @@
             this.txtBusNumber = new System.Windows.Forms.TextBox();
             this.txtDriverName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.labBrojAutobusa = new System.Windows.Forms.Label();
+            this.lbDrivers = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewSchedule
             // 
             this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(12, 63);
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
             this.dataGridViewSchedule.RowHeadersWidth = 51;
             this.dataGridViewSchedule.RowTemplate.Height = 24;
@@ -47,21 +49,21 @@
             // 
             // txtBusNumber
             // 
-            this.txtBusNumber.Location = new System.Drawing.Point(94, 372);
+            this.txtBusNumber.Location = new System.Drawing.Point(22, 35);
             this.txtBusNumber.Name = "txtBusNumber";
             this.txtBusNumber.Size = new System.Drawing.Size(100, 22);
             this.txtBusNumber.TabIndex = 1;
             // 
             // txtDriverName
             // 
-            this.txtDriverName.Location = new System.Drawing.Point(268, 372);
+            this.txtDriverName.Location = new System.Drawing.Point(158, 36);
             this.txtDriverName.Name = "txtDriverName";
             this.txtDriverName.Size = new System.Drawing.Size(100, 22);
             this.txtDriverName.TabIndex = 2;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(481, 372);
+            this.btnSearch.Location = new System.Drawing.Point(284, 34);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 3;
@@ -69,11 +71,31 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // labBrojAutobusa
+            // 
+            this.labBrojAutobusa.AutoSize = true;
+            this.labBrojAutobusa.Location = new System.Drawing.Point(19, 16);
+            this.labBrojAutobusa.Name = "labBrojAutobusa";
+            this.labBrojAutobusa.Size = new System.Drawing.Size(93, 16);
+            this.labBrojAutobusa.TabIndex = 4;
+            this.labBrojAutobusa.Text = "Broj autobusa:";
+            // 
+            // lbDrivers
+            // 
+            this.lbDrivers.AutoSize = true;
+            this.lbDrivers.Location = new System.Drawing.Point(155, 17);
+            this.lbDrivers.Name = "lbDrivers";
+            this.lbDrivers.Size = new System.Drawing.Size(48, 16);
+            this.lbDrivers.TabIndex = 5;
+            this.lbDrivers.Text = "Vozač:";
+            // 
             // frm_Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbDrivers);
+            this.Controls.Add(this.labBrojAutobusa);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtDriverName);
             this.Controls.Add(this.txtBusNumber);
@@ -93,5 +115,7 @@
         private System.Windows.Forms.TextBox txtBusNumber;
         private System.Windows.Forms.TextBox txtDriverName;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label labBrojAutobusa;
+        private System.Windows.Forms.Label lbDrivers;
     }
 }
