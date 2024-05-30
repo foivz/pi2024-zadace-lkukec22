@@ -34,6 +34,8 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.labBrojAutobusa = new System.Windows.Forms.Label();
             this.lbDrivers = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +91,33 @@
             this.lbDrivers.TabIndex = 5;
             this.lbDrivers.Text = "Vozač:";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(480, 433);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(153, 23);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Dodavanje podataka";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(306, 433);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(153, 23);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "Promjena podataka";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // frm_Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lbDrivers);
             this.Controls.Add(this.labBrojAutobusa);
             this.Controls.Add(this.btnSearch);
@@ -117,5 +141,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label labBrojAutobusa;
         private System.Windows.Forms.Label lbDrivers;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

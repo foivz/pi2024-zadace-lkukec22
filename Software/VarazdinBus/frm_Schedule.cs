@@ -57,5 +57,25 @@ namespace VarazdinBus
         {
             LoadData();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frm_EditSchedule editForm = new frm_EditSchedule();
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadData();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            
+                frm_EditSchedule editForm = new frm_EditSchedule();
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    LoadData();
+                }
+            
+        }
     }
 }
