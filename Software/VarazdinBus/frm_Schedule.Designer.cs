@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Schedule));
             this.dataGridViewSchedule = new System.Windows.Forms.DataGridView();
             this.txtBusNumber = new System.Windows.Forms.TextBox();
             this.txtDriverName = new System.Windows.Forms.TextBox();
@@ -41,33 +42,38 @@
             // 
             // dataGridViewSchedule
             // 
+            this.dataGridViewSchedule.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSchedule.Location = new System.Drawing.Point(12, 63);
+            this.dataGridViewSchedule.Location = new System.Drawing.Point(16, 87);
+            this.dataGridViewSchedule.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridViewSchedule.Name = "dataGridViewSchedule";
             this.dataGridViewSchedule.RowHeadersWidth = 51;
             this.dataGridViewSchedule.RowTemplate.Height = 24;
-            this.dataGridViewSchedule.Size = new System.Drawing.Size(776, 331);
+            this.dataGridViewSchedule.Size = new System.Drawing.Size(970, 455);
             this.dataGridViewSchedule.TabIndex = 0;
             // 
             // txtBusNumber
             // 
-            this.txtBusNumber.Location = new System.Drawing.Point(22, 35);
+            this.txtBusNumber.Location = new System.Drawing.Point(28, 49);
+            this.txtBusNumber.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtBusNumber.Name = "txtBusNumber";
-            this.txtBusNumber.Size = new System.Drawing.Size(100, 22);
+            this.txtBusNumber.Size = new System.Drawing.Size(124, 27);
             this.txtBusNumber.TabIndex = 1;
             // 
             // txtDriverName
             // 
-            this.txtDriverName.Location = new System.Drawing.Point(158, 36);
+            this.txtDriverName.Location = new System.Drawing.Point(198, 50);
+            this.txtDriverName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtDriverName.Name = "txtDriverName";
-            this.txtDriverName.Size = new System.Drawing.Size(100, 22);
+            this.txtDriverName.Size = new System.Drawing.Size(124, 27);
             this.txtDriverName.TabIndex = 2;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(284, 34);
+            this.btnSearch.Location = new System.Drawing.Point(356, 46);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(102, 31);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Pretraži";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -76,26 +82,27 @@
             // labBrojAutobusa
             // 
             this.labBrojAutobusa.AutoSize = true;
-            this.labBrojAutobusa.Location = new System.Drawing.Point(19, 16);
+            this.labBrojAutobusa.Location = new System.Drawing.Point(23, 22);
             this.labBrojAutobusa.Name = "labBrojAutobusa";
-            this.labBrojAutobusa.Size = new System.Drawing.Size(93, 16);
+            this.labBrojAutobusa.Size = new System.Drawing.Size(150, 22);
             this.labBrojAutobusa.TabIndex = 4;
             this.labBrojAutobusa.Text = "Broj autobusa:";
             // 
             // lbDrivers
             // 
             this.lbDrivers.AutoSize = true;
-            this.lbDrivers.Location = new System.Drawing.Point(155, 17);
+            this.lbDrivers.Location = new System.Drawing.Point(193, 23);
             this.lbDrivers.Name = "lbDrivers";
-            this.lbDrivers.Size = new System.Drawing.Size(48, 16);
+            this.lbDrivers.Size = new System.Drawing.Size(70, 22);
             this.lbDrivers.TabIndex = 5;
             this.lbDrivers.Text = "Vozač:";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(480, 433);
+            this.btnAdd.Location = new System.Drawing.Point(755, 595);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(153, 23);
+            this.btnAdd.Size = new System.Drawing.Size(231, 31);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Dodavanje podataka";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -103,9 +110,10 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(306, 433);
+            this.btnEdit.Location = new System.Drawing.Point(531, 595);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(153, 23);
+            this.btnEdit.Size = new System.Drawing.Size(191, 31);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Promjena podataka";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -113,9 +121,10 @@
             // 
             // frm_Schedule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(1000, 672);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lbDrivers);
@@ -124,8 +133,12 @@
             this.Controls.Add(this.txtDriverName);
             this.Controls.Add(this.txtBusNumber);
             this.Controls.Add(this.dataGridViewSchedule);
+            this.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "frm_Schedule";
-            this.Text = "frm_Schedule";
+            this.Text = "Raspored reda vozača";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_Schedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
             this.ResumeLayout(false);
