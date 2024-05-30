@@ -22,7 +22,12 @@ namespace VarazdinBus
             try
             {
                 DB.OpenConnection();
-                string query = "SELECT Id_SchTable, Bus_number, Work_hours, Id_DiffSchedule, Id_Driver FROM Schedule";
+                string query = @"
+            SELECT s.Id_SchTable, s.Bus_number, s.Work_hours,Id_DiffSchedule,
+                
+                CONCAT(drv.Firstname, ' ', drv.Surname) AS Driver_Name
+            FROM Schedule s
+            LEFT JOIN Drivers drv ON s.Id_Driver = drv.Id_Driver";
                 SqlDataReader reader = DB.GetDataReader(query);
 
                 DataTable dataTable = new DataTable();
@@ -40,5 +45,7 @@ namespace VarazdinBus
                 DB.CloseConnection();
             }
         }
+
+
     }
 }
