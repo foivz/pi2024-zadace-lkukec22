@@ -22,22 +22,20 @@ namespace VarazdinBus
             try
             {
                 DB.OpenConnection();
-
-                // Priprema SQL upita
+                
                 string query = @"
-        SELECT s.Id_SchTable, s.Bus_number, s.Work_hours, s.Id_DiffSchedule,
-               CONCAT(drv.Firstname, ' ', drv.Surname) AS Driver_Name
-        FROM Schedule s
-        LEFT JOIN Drivers drv ON s.Id_Driver = drv.Id_Driver
-        WHERE (@BusNumber IS NULL OR s.Bus_number = @BusNumber)
-          AND (@DriverName IS NULL OR CONCAT(drv.Firstname, ' ', drv.Surname) LIKE '%' + @DriverName + '%')";
+                SELECT s.Id_SchTable, s.Bus_number, s.Work_hours, s.Id_DiffSchedule,
+                    CONCAT(drv.Firstname, ' ', drv.Surname) AS Driver_Name
+                    FROM Schedule s
+                    LEFT JOIN Drivers drv ON s.Id_Driver = drv.Id_Driver
+                    WHERE (@BusNumber IS NULL OR s.Bus_number = @BusNumber)
+                    AND (@DriverName IS NULL OR CONCAT(drv.Firstname, ' ', drv.Surname) LIKE '%' + @DriverName + '%')";
 
-                // Kreiranje SQL komande
+                
                 SqlCommand command = new SqlCommand(query, DB.Connection);
                 command.Parameters.AddWithValue("@BusNumber", string.IsNullOrEmpty(txtBusNumber.Text) ? (object)DBNull.Value : txtBusNumber.Text);
                 command.Parameters.AddWithValue("@DriverName", string.IsNullOrEmpty(txtDriverName.Text) ? (object)DBNull.Value : txtDriverName.Text);
 
-                // Izvršenje upita i postavljanje rezultata u DataGridView
                 SqlDataReader reader = command.ExecuteReader();
                 DataTable dataTable = new DataTable();
                 dataTable.Load(reader);
