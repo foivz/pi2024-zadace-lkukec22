@@ -28,37 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Bus_number = new System.Windows.Forms.TextBox();
-            this.Work_hours = new System.Windows.Forms.TextBox();
-            this.Driver = new System.Windows.Forms.ComboBox();
+            this.txtBusNumber = new System.Windows.Forms.TextBox();
+            this.comboBoxWorkHours = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.comboBoxDriver = new System.Windows.Forms.ComboBox();
+            this.txtIdScheTable = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Bus_number
+            // txtBusNumber
             // 
-            this.Bus_number.Location = new System.Drawing.Point(51, 350);
-            this.Bus_number.Name = "Bus_number";
-            this.Bus_number.Size = new System.Drawing.Size(100, 22);
-            this.Bus_number.TabIndex = 0;
+            this.txtBusNumber.Location = new System.Drawing.Point(51, 350);
+            this.txtBusNumber.Name = "txtBusNumber";
+            this.txtBusNumber.Size = new System.Drawing.Size(100, 22);
+            this.txtBusNumber.TabIndex = 0;
             // 
-            // Work_hours
+            // comboBoxWorkHours
             // 
-            this.Work_hours.Location = new System.Drawing.Point(217, 350);
-            this.Work_hours.Name = "Work_hours";
-            this.Work_hours.Size = new System.Drawing.Size(100, 22);
-            this.Work_hours.TabIndex = 1;
-            // 
-            // Driver
-            // 
-            this.Driver.FormattingEnabled = true;
-            this.Driver.Location = new System.Drawing.Point(404, 350);
-            this.Driver.Name = "Driver";
-            this.Driver.Size = new System.Drawing.Size(121, 24);
-            this.Driver.TabIndex = 2;
+            this.comboBoxWorkHours.FormattingEnabled = true;
+            this.comboBoxWorkHours.Location = new System.Drawing.Point(225, 351);
+            this.comboBoxWorkHours.Name = "comboBoxWorkHours";
+            this.comboBoxWorkHours.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxWorkHours.TabIndex = 2;
             // 
             // btnSave
             // 
@@ -104,20 +99,47 @@
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Izbriši podatke";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // comboBoxDriver
+            // 
+            this.comboBoxDriver.FormattingEnabled = true;
+            this.comboBoxDriver.Location = new System.Drawing.Point(404, 351);
+            this.comboBoxDriver.Name = "comboBoxDriver";
+            this.comboBoxDriver.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxDriver.TabIndex = 8;
+            // 
+            // txtIdScheTable
+            // 
+            this.txtIdScheTable.Location = new System.Drawing.Point(71, 223);
+            this.txtIdScheTable.Name = "txtIdScheTable";
+            this.txtIdScheTable.Size = new System.Drawing.Size(100, 22);
+            this.txtIdScheTable.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(68, 204);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "ID:";
             // 
             // frm_EditSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtIdScheTable);
+            this.Controls.Add(this.comboBoxDriver);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.Driver);
-            this.Controls.Add(this.Work_hours);
-            this.Controls.Add(this.Bus_number);
+            this.Controls.Add(this.comboBoxWorkHours);
+            this.Controls.Add(this.txtBusNumber);
             this.Name = "frm_EditSchedule";
             this.Text = "frm_EditSchedule";
             this.ResumeLayout(false);
@@ -127,13 +149,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox Bus_number;
-        private System.Windows.Forms.TextBox Work_hours;
-        private System.Windows.Forms.ComboBox Driver;
+        private System.Windows.Forms.TextBox txtBusNumber;
+        private System.Windows.Forms.ComboBox comboBoxWorkHours;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ComboBox comboBoxDriver;
+        private System.Windows.Forms.TextBox txtIdScheTable;
+        private System.Windows.Forms.Label label4;
     }
 }

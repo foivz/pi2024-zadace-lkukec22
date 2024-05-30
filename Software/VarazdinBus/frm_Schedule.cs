@@ -24,7 +24,7 @@ namespace VarazdinBus
                 DB.OpenConnection();
                 
                 string query = @"
-                SELECT s.Id_SchTable, s.Bus_number, s.Work_hours, s.Id_DiffSchedule,
+                SELECT s.Id_SchTable, s.Bus_number, s.Work_hours,
                     CONCAT(drv.Firstname, ' ', drv.Surname) AS Driver_Name
                     FROM Schedule s
                     LEFT JOIN Drivers drv ON s.Id_Driver = drv.Id_Driver
@@ -69,23 +69,17 @@ namespace VarazdinBus
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            
-                frm_EditSchedule editForm = new frm_EditSchedule();
+            if (dataGridViewSchedule.CurrentRow != null)
+            {
+                int selectedId = Convert.ToInt32(dataGridViewSchedule.CurrentRow.Cells["Id_SchTable"].Value);
+                frm_EditSchedule editForm = new frm_EditSchedule(selectedId);
                 if (editForm.ShowDialog() == DialogResult.OK)
                 {
                     LoadData();
                 }
-            
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            frm_EditSchedule editForm = new frm_EditSchedule();
-            if (editForm.ShowDialog() == DialogResult.OK)
-            {
-                LoadData();
             }
-
         }
+
+
     }
 }
