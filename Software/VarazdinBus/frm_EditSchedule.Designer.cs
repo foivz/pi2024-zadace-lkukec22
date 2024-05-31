@@ -44,7 +44,7 @@
             // txtBusNumber
             // 
             this.txtBusNumber.Location = new System.Drawing.Point(209, 97);
-            this.txtBusNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBusNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtBusNumber.Name = "txtBusNumber";
             this.txtBusNumber.Size = new System.Drawing.Size(150, 27);
             this.txtBusNumber.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.comboBoxWorkHours.FormattingEnabled = true;
             this.comboBoxWorkHours.Location = new System.Drawing.Point(209, 165);
-            this.comboBoxWorkHours.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxWorkHours.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxWorkHours.Name = "comboBoxWorkHours";
             this.comboBoxWorkHours.Size = new System.Drawing.Size(150, 30);
             this.comboBoxWorkHours.TabIndex = 2;
@@ -61,7 +61,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(265, 318);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 32);
             this.btnSave.TabIndex = 3;
@@ -75,9 +75,9 @@
             this.label1.Location = new System.Drawing.Point(42, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 22);
+            this.label1.Size = new System.Drawing.Size(150, 22);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Broj autobusa";
+            this.label1.Text = "Broj autobusa:";
             // 
             // label2
             // 
@@ -85,24 +85,24 @@
             this.label2.Location = new System.Drawing.Point(42, 173);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 22);
+            this.label2.Size = new System.Drawing.Size(150, 22);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Radno vrijeme";
+            this.label2.Text = "Radno vrijeme:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 238);
+            this.label3.Location = new System.Drawing.Point(42, 236);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
+            this.label3.Size = new System.Drawing.Size(110, 22);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Vozač";
+            this.label3.Text = "ID vozača:";
             // 
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(128, 318);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(94, 32);
             this.btnDelete.TabIndex = 7;
@@ -113,7 +113,7 @@
             // txtIdScheTable
             // 
             this.txtIdScheTable.Location = new System.Drawing.Point(209, 40);
-            this.txtIdScheTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdScheTable.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdScheTable.Name = "txtIdScheTable";
             this.txtIdScheTable.ReadOnly = true;
             this.txtIdScheTable.Size = new System.Drawing.Size(124, 27);
@@ -132,7 +132,7 @@
             // txtDriverId
             // 
             this.txtDriverId.Location = new System.Drawing.Point(209, 233);
-            this.txtDriverId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDriverId.Margin = new System.Windows.Forms.Padding(4);
             this.txtDriverId.Name = "txtDriverId";
             this.txtDriverId.Size = new System.Drawing.Size(150, 27);
             this.txtDriverId.TabIndex = 11;
@@ -156,7 +156,7 @@
             this.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_EditSchedule";
             this.Text = "Rad s tablicom";
             this.ResumeLayout(false);

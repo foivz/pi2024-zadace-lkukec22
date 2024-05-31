@@ -19,8 +19,6 @@ namespace VarazdinBus
 
         private void LoadData()
         {
-            try
-            {
                 DB.OpenConnection();
                 
                 string query = @"
@@ -41,16 +39,18 @@ namespace VarazdinBus
                 dataTable.Load(reader);
                 dataGridViewSchedule.DataSource = dataTable;
 
+                dataGridViewSchedule.Columns["Id_SchTable"].HeaderText = "ID";
+                dataGridViewSchedule.Columns["Bus_number"].HeaderText = "Broj autobusa";
+                dataGridViewSchedule.Columns["Work_hours"].HeaderText = "Radno Vrijeme";
+                dataGridViewSchedule.Columns["Driver_Name"].HeaderText = "Vozač";
+
+                dataGridViewSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
                 reader.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}");
-            }
-            finally
-            {
+            
                 DB.CloseConnection();
-            }
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -80,6 +80,9 @@ namespace VarazdinBus
             }
         }
 
-
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
