@@ -37,10 +37,8 @@
             this.lbDrivers = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewSchedule
@@ -122,16 +120,6 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::VarazdinBus.Properties.Resources.bus_png_2222;
-            this.pictureBox1.InitialImage = global::VarazdinBus.Properties.Resources.bus_png_2222;
-            this.pictureBox1.Location = new System.Drawing.Point(669, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(880, 455);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(16, 595);
@@ -157,7 +145,6 @@
             this.Controls.Add(this.txtDriverName);
             this.Controls.Add(this.txtBusNumber);
             this.Controls.Add(this.dataGridViewSchedule);
-            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Cascadia Code", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -166,7 +153,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_Schedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSchedule)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,7 +168,6 @@
         private System.Windows.Forms.Label lbDrivers;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
     }
 }
